@@ -33,7 +33,7 @@ npm install --save fellgill/google-translate-api
 const translate = require('@fellgill/google-translate-api');
 
 // Wenn Sie von GitHub installiert haben, gehen Sie wie folgt vor:
-const translate = require('google-translate-api');
+const translate = require('@fellgill/google-translate-api');
 ```
 
 #### Methode: `translate(text, options)`

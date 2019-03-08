@@ -1,7 +1,7 @@
 # Google Translate API
 Modul [Node.JS](https://nodejs.org) zur Nutzung der kostenlosen Website Google Translate.
 
-[![GitHub release](https://img.shields.io/github/release/FellGill/google-translate-api.svg?style=flat)](https://github.com/k3rn31p4nic/google-translate-api/releases)
+[![GitHub release](https://img.shields.io/github/release/FellGill/google-translate-api.svg?style=flat)](https://github.com/FellGill/google-translate-api/releases)
 [![Dependencies](https://david-dm.org/FellGill/google-translate-api.svg)](https://david-dm.org/k3rn31p4nic/google-translate-api)
 [![Known Vulnerabilities](https://snyk.io/test/github/FellGill/google-translate-api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/FellGill/google-translate-api?targetFile=package.json)
 [![license](https://img.shields.io/github/license/FellGill/google-translate-api.svg)](LICENSE)

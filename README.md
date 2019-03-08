@@ -1,2 +1,2 @@
 # google-translate-api
-Node.JS module to use the free Google Translate website.
+Module Node.JS om de gratis website Google Translate te gebruiken.

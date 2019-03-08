@@ -1,0 +1,38 @@
+{
+  "name": "@fellgill/google-translate-api",
+  "version": "20.1.9",
+  "description": "Modul Node.JS zur Nutzung der kostenlosen Website Google Translate.",
+  "main": "src/index.min.js",
+  "scripts": {
+    "test:lint": "./node_modules/.bin/eslint .",
+    "test": "npm run test:lint",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FellGill/google-translate-api.git"
+  },
+  "keywords": [
+    "google translate api",
+    "google translate",
+    "google api",
+    "translate api",
+    "google",
+    "translate",
+    "api",
+    "got",
+    "eslint",
+    "discord.js"
+  ],
+  "author": "FellGill",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/FellGill/google-translate-api.git"
+  },
+  "dependencies": {
+    "got": "^9.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1"
+  }
+}

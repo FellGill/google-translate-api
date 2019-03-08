@@ -48,24 +48,24 @@ translate(text, options).then(console.log).catch(console.error);
 | `options.to` | `String` | Ja | `'en'` | Der sprachenname/ISO 639-1-Code, in den übersetzt werden soll. Wenn keine angegeben ist, wird es ins Englische übersetzt. |
 | `options.raw` | `Boolean` | Ja | `false` | Wenn `true`, wird die von Google Translate empfangene Rohausgabe zurückgegeben. |
 
-#### Returns: `Promise<Object>`
+#### Kehrt zurück: `Promise<Object>`
 **Response Object:**
 
-| Key | Type | Description |
+| Schlüssel | Art | Beschreibung |
 |-|-|-|
-| `text` | `String` | The translated text. |
+| `text` | `String` | Der übersetzte Text. |
 | `from` | `Object` | - |
 | `from.language` | `Object` | - |
-| `from.language.didYouMean` | `Booelan` | Whether or not the API suggest a correction in the source language. |
-| `from.language.iso` | `String` | The ISO 639-1 code of the language that the API has recognized in the text. |
+| `from.language.didYouMean` | `Booelan` | Ob die API eine Korrektur in der Quellsprache vorschlägt oder nicht. |
+| `from.language.iso` | `String` | Der ISO 639-1-Code der Sprache, die die API im Text erkannt hat. |
 | `from.text` | `Object` | - |
-| `from.text.autoCorrected` | `Booelan` | Whether or not the API has auto corrected the original text. |
-| `from.text.value` | `String` | The auto corrected text or the text with suggested corrections. Only returned if `from.text.autoCorrected` or `from.text.didYouMean` is `true`. |
-| `from.text.didYouMean` | `Booelan` | Wherether or not the API has suggested corrections to the text |
-| `raw` | `String` | The raw response from Google Translate servers. Only returned if `options.raw` is `true` in the request options. |
+| `from.text.autoCorrected` | `Booelan` | Ob die API den ursprünglichen Text automatisch korrigiert hat oder nicht. |
+| `from.text.value` | `String` | Der automatisch korrigierte Text oder der Text mit Korrekturvorschlägen. Wird nur zurückgegeben wenn `from.text.autoCorrected` oder `from.text.didYouMean` ist `true`. |
+| `from.text.didYouMean` | `Booelan` | Ob die API Korrekturen am Text vorgeschlagen hat oder nicht |
+| `raw` | `String` | Die rohe Antwort von Google Translate-Servern. Wird nur zurückgegeben wenn `options.raw` ist `true` in den Anforderungsoptionen. |
 
 
-## Examples
+## Beispiele
 #### Von der automatischen Spracherkennung zu Englisch:
 ```js
 translate('Ich bin ein text', { to: 'en' }).then(res => {
@@ -87,12 +87,12 @@ translate('Ich bn ein text', { from: 'de', to: 'en' }).then(res => {
 });
 ```
 
-#### Sometimes Google Translate won't auto correct:
+#### Manchmal wird Google Translate nicht automatisch korrigiert:
 ```js
-translate('Thnak you', { from: 'en', to: 'fr' }).then(res => {
+translate('Ich bn ein text', { from: 'en', to: 'fr' }).then(res => {
   console.log(res.text); // OUTPUT: ''
   console.log(res.from.autoCorrected); // OUTPUT: false
-  console.log(res.from.text.value); // OUTPUT: [Thank] you
+  console.log(res.from.text.value); // OUTPUT: Ich [bin] ein text
   console.log(res.from.text.didYouMean); // OUTPUT: true
 }).catch(err => {
   console.error(err);

@@ -49,7 +49,7 @@ translate(text, options).then(console.log).catch(console.error);
 | `options.raw` | `Boolean` | Ja | `false` | Wenn `true`, wird die von Google Translate empfangene Rohausgabe zurückgegeben. |
 
 #### Kehrt zurück: `Promise<Object>`
-**Response Object:**
+**Antwortobjekt:**
 
 | Schlüssel | Art | Beschreibung |
 |-|-|-|

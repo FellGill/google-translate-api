@@ -89,7 +89,7 @@ translate('Ich bn ein text', { from: 'de', to: 'en' }).then(res => {
 
 #### Manchmal wird Google Translate nicht automatisch korrigiert:
 ```js
-translate('Ich bn ein text', { from: 'en', to: 'fr' }).then(res => {
+translate('Ich bn ein text', { from: 'de', to: 'en' }).then(res => {
   console.log(res.text); // OUTPUT: ''
   console.log(res.from.autoCorrected); // OUTPUT: false
   console.log(res.from.text.value); // OUTPUT: Ich [bin] ein text
